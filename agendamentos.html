@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Agendamentos</h1>
+        </header>
+
+        <section class="filter-section">
+            <h2>Filtrar Atendimentos</h2>
+            <label for="type">Tipo de Atendimento:</label>
+            <select id="type">
+                <option value="consulta"> </option>
+                <option value="consulta">Consulta</option>
+                <option value="exame">Exame</option>
+                <option value="terapia">Terapia</option>
+            </select>
+        </section>
+
+        <div class="calendar-section">
+            <h2>Escolha uma Data para o Agendamento</h2>
+            <input type="date" id="appointmentDate">
+            <p id="error-message" style="color: red; display: none;">Sábados e domingos não estão disponíveis para agendamento.</p>
+        </div>
+
+        <!-- Seção para informações do usuário -->
+        <section class="user-info-section">
+            <h2>Informações do Usuário</h2>
+            <label for="fullName">Nome Completo:</label>
+            <input type="text" id="fullName" placeholder="Digite seu nome completo" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Digite seu email" required>
+
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" placeholder="Digite seu telefone" required>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" placeholder="Digite seu CPF" required>
+        </section>
+
+        <section class="times-section">
+            <h2>Horários Disponíveis</h2>
+            <div id="times">
+                <!-- Horários serão carregados via JavaScript -->
+            </div>
+        </section>
+
+        <!-- Botão de confirmação de agendamento -->
+        <button id="confirmButton">Confirmar Agendamento</button>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

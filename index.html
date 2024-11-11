@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Cabeçalho da Clínica com fundo transparente -->
+    <header class="clinic-header">
+        <h1>Clínica Vida e Saúde</h1>
+    </header>
+
+    <div class="login-container">
+        <h1>Bem-vindo ao Sistema de Agendamento</h1>
+        <form id="loginForm" onsubmit="return login(event)">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Entrar</button>
+            <p id="errorMessage" style="color: red;"></p>
+        </form>
+    </div>
+</body>
+</html>

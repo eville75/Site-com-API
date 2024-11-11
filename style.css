@@ -1,0 +1,319 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url(images/image-backg.jpeg);
+    background-size: 95%;
+    color: #333;
+}
+
+/* Container de login */
+.login-container {
+    background-color: #ffffff;
+    padding: 3em 2em;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-container h1 {
+    font-size: 1.8em;
+    color: #00838f;
+    margin-bottom: 1em;
+}
+
+/* Cabeçalho da Clínica com fundo transparente e posição fixa */
+.clinic-header {
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo transparente */
+    position: fixed; /* Fixa o cabeçalho no topo */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Garante que fique acima dos outros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+}
+
+.clinic-header h1 {
+    font-size: 2em;
+    color: #00838f; /* Cor do texto */
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Adiciona margem superior ao conteúdo principal para compensar o cabeçalho fixo */
+.login-container {
+    margin-top: 100px; /* Compensa a altura do cabeçalho fixo */
+    text-align: center;
+    padding: 2em;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Estilos do formulário */
+.login-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #555;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: all 0.3s;
+}
+
+.login-container input:focus {
+    border-color: #00acc1;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 172, 193, 0.3);
+}
+
+/* Botão de login */
+.login-container button {
+    width: 100%;
+    padding: 0.8em;
+    background-color: #00838f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #006064;
+}
+
+/* Mensagem de erro */
+#errorMessage {
+    color: #e53935;
+    margin-top: 0.5em;
+}
+
+/* Tela de agendamentos */
+header {
+    text-align: center;
+    padding: 1em;
+    background-color: #00838f;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 1.5em;
+}
+
+header h1 {
+    font-size: 1.8em;
+}
+
+main {
+    width: 100%;
+    max-width: 600px;
+    padding: 1.5em;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Seções de filtros e calendário */
+.filter-section, .calendar-section, .times-section {
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+.filter-section h2, .calendar-section h2, .times-section h2 {
+    color: #00838f;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.filter-section select, .calendar-section input {
+    width: 100%;
+    padding: 0.8em;
+    margin-top: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+.filter-section select:focus, .calendar-section input:focus {
+    border-color: #00acc1;
+    box-shadow: 0 0 5px rgba(0, 172, 193, 0.3);
+}
+
+/* Horários */
+#times {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    justify-content: center;
+}
+
+.time-btn {
+    padding: 0.6em 1em;
+    border: none;
+    border-radius: 6px;
+    background-color: #00838f;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.time-btn:hover {
+    background-color: #006064;
+}
+
+/* Botão de confirmação */
+#confirmButton {
+    width: 100%;
+    padding: 0.8em;
+    margin-top: 1.5em;
+    background-color: #008f6b;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#confirmButton:hover {
+    background-color: #006064;
+}
+
+/* Estilo para o horário */
+.time-btn {
+    padding: 0.5em 1em;
+    margin: 0.3em;
+    background-color: #e0f7fa;
+    color: #006064;
+    border: 1px solid #006064;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilo para o horário selecionado */
+.time-btn.selected {
+    background-color: #004d40; /* Cor diferente para o botão selecionado */
+    color: #ffffff;            /* Cor do texto branco para contraste */
+}
+
+/* Seção de informações do usuário */
+.user-info-section {
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+.user-info-section h2 {
+    color: #00838f;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+/* Estilos para os campos de entrada de informações do usuário */
+.user-info-section label {
+    display: block;
+    margin-top: 1em;
+    font-size: 1em;
+    color: #333;
+    text-align: left;
+}
+
+.user-info-section input {
+    width: 100%;
+    padding: 0.8em;
+    margin-top: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+/* Efeitos ao focar nos campos de entrada */
+.user-info-section input:focus {
+    border-color: #00acc1;
+    box-shadow: 0 0 5px rgba(0, 172, 193, 0.3);
+}
+
+/* Estilos gerais da tela de informativos */
+.informativos-container {
+    background-color: #ffffff; /* Fundo branco para o container */
+    padding: 2em; /* Preenchimento interno */
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    max-width: 800px; /* Largura máxima do container */
+    margin: 1.5em auto; /* Margem automática para centralizar */
+    text-align: center; /* Centraliza o texto dentro do container */
+}
+
+.informativos-container h1 {
+    font-size: 2em; /* Tamanho do título */
+    color: #00838f; /* Cor do título */
+    margin-bottom: 1em; /* Espaçamento inferior do título */
+}
+
+.informativos-container h2 {
+    font-size: 1.5em; /* Tamanho dos subtítulos */
+    color: #00838f; /* Cor dos subtítulos */
+    margin: 1em 0; /* Margem superior e inferior */
+}
+
+.informativos-container p {
+    font-size: 1.1em; /* Tamanho da fonte dos parágrafos */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+    margin: 10px 0; /* Margem vertical */
+}
+
+.informativos-container ul {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove preenchimento da lista */
+}
+
+.informativos-container ul li {
+    background: #f9f9f9; /* Fundo claro para os itens da lista */
+    padding: 10px; /* Preenchimento para os itens da lista */
+    border-radius: 6px; /* Bordas arredondadas nos itens da lista */
+    margin: 5px 0; /* Margem inferior para espaçamento entre itens */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve nos itens da lista */
+}
+
+/* Botão de navegação para agendamentos */
+.informativos-container button {
+    padding: 12px 25px; /* Preenchimento do botão */
+    background-color: #00838f; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Sem borda */
+    border-radius: 6px; /* Bordas arredondadas */
+    font-size: 1.1em; /* Tamanho da fonte do botão */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+    margin-top: 1em; /* Margem superior para espaçamento */
+}
+
+.informativos-container button:hover {
+    background-color: #006064; /* Cor do botão ao passar o mouse */
+}

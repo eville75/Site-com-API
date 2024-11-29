@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamentos</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Script da API do Google -->
+    <script src="https://apis.google.com/js/api.js" defer></script>
+</head>
+<body>
+    <!-- Cabeçalho principal -->
+    <header class="clinic-header">
+        <h1>Agendamentos</h1>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Seção de informações do evento -->
+        <section class="user-info-section">
+            <h2>Informações do Evento</h2>
+
+            <form id="event-form">
+                <div class="form-group">
+                    <label for="event-title">Título do Evento:</label>
+                    <input type="text" id="event-title" placeholder="Digite o título do evento" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="event-location">Local:</label>
+                    <input type="text" id="event-location" placeholder="Digite o local" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="event-description">Descrição:</label>
+                    <textarea id="event-description" placeholder="Descreva o evento" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="start-date">Data e Hora de Início:</label>
+                    <input type="datetime-local" id="start-date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="end-date">Data e Hora de Término:</label>
+                    <input type="datetime-local" id="end-date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email para Convite:</label>
+                    <input type="email" id="email" placeholder="Digite o email do convidado" required>
+                </div>
+
+                <!-- Botão para criar evento -->
+                <button id="create-event-button" type="button">Criar Evento</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Script de controle -->
+    <script src="script.js" defer></script>
+</body>
+</html>
